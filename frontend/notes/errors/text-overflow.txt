@@ -1,0 +1,7 @@
+Problem: Text in <p></p> element wasn't wrapping properly, it was overflowing.
+
+Solution: Use this CSS code:
+
+p {
+      word-break: break-all;
+    }

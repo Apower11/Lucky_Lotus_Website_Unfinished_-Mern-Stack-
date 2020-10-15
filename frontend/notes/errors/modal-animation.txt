@@ -1,0 +1,48 @@
+Problem: CSSTransition wasn't animating the modal properly.
+
+Solution: Used keyframes to animate the modal's entry and exit in the DOM.
+
+Example Code:
+@keyframes showModal {
+  from {
+    transform: translateY(-10rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes closeModal {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+}
+
+.modal {
+  z-index: 100;
+  position: fixed;
+  left: calc(50% - 17.5rem);
+  width: 35rem;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 8px;
+  animation-name: showModal;
+  animation-duration: 0.5s;
+}
+
+.modal-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-exit-active {
+  animation-name: closeModal;
+  animation-duration: 0.5;
+}
+
+Important!!!!!: Still use CSSTransition to ensure modal-exit and modal-exit-active classes works

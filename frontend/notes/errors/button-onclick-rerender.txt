@@ -1,0 +1,3 @@
+Problem: Setting click function on button to a state changing function caused too many re-renders.
+
+Solution: Wrap state changing function such as setShowLoginModal(!showLoginModal) in a separate arrow function and pass that into the button's onClick property.

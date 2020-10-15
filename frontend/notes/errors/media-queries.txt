@@ -1,0 +1,5 @@
+Problem: Media query styles not overlapping normal ones
+
+Solution: Use different selectors, such as an Id instead of the class
+attribute, or prepending body or some other container to the targeted
+element for styling.

@@ -1,0 +1,10 @@
+Issue: Horizontal scroll.
+
+Cause: Couldn't find.
+
+Solution:
+
+In CSS:
+body {
+    overflow-x: hidden;
+}

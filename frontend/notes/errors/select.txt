@@ -1,0 +1,12 @@
+Problem: Couldn't make style of placeholder different to style of normal options.
+
+Solution:
+
+Placeholder HTML:
+<option value="" hidden>Sort By</option>
+
+Placeholder CSS:
+select:invalid {
+            color: #9d9999;
+            border: 2px solid #cccaca;
+        }

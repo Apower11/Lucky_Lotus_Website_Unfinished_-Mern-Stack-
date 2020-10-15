@@ -1,0 +1,4 @@
+Problem: Infinite loop of reloads and changing state, page wouldn't work because reviews kept updating.
+
+Solution: When changing state in useEffect hook, store the code in an async function and
+make the reviews = await (whatever reviews is). So, async await functions are the way to go.

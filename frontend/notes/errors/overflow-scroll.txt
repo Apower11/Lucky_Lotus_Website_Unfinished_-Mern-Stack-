@@ -1,0 +1,3 @@
+Problem: Overflow scroll not working on modal or orders component.
+
+Solution: Set max-height property in css and then add overflow: scroll.

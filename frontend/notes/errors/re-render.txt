@@ -1,0 +1,6 @@
+Problem: Google Maps Component kept re-rendering.
+
+Cause: Had Google Maps Component within main Component.
+
+Solution: Have main component that you export and map component separate from
+each other, and use map component in main component.

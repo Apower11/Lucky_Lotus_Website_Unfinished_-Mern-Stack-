@@ -1,0 +1,4 @@
+react-owl-carousel plugin is good for building sliders in components
+such as testimonials slideshows.
+
+Link here: https://www.npmjs.com/package/react-owl-carousel
