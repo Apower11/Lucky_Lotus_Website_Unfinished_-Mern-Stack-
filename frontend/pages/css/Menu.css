@@ -1,0 +1,396 @@
+.menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .menu-items {
+  width: 60%;
+  border-left: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+}
+
+.menu .menu-items .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  border: 3px solid black;
+}
+
+.menu .menu-items .tab h3 {
+  margin-right: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu .menu-items .tab h3.active {
+  text-decoration: underline;
+}
+
+.menu .menu-items .tab h3:last-of-type {
+  margin-right: 0;
+}
+
+.menu .menu-items .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-left: 48px;
+  margin-top: 49px;
+}
+
+.menu .menu-items .items .tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.menu .menu-items .items .left-side {
+  margin-right: 52px;
+}
+
+.menu .menu-items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: auto;
+  width: 24.67403314917127vw;
+  margin-bottom: 31px;
+}
+
+.menu .menu-items .item .price {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+}
+
+.menu .menu-items .item .title {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+}
+
+.menu .menu-items .item .description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.menu .menu-items .item button {
+  height: 29px;
+  width: 62px;
+  font-size: 16px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.menu .orders {
+  width: 35%;
+  background-color: #625656;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-height: 725px;
+  overflow-y: scroll;
+}
+
+.menu .orders .pickup-method__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .orders .pickup-method__choice label {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+}
+
+.menu .orders .pickup-method__choice input {
+  height: 30px;
+  width: 30px;
+}
+
+.menu .orders .pickup-method__choice label {
+  margin-left: 1.4641288433382138vw;
+}
+
+.menu .orders .pickup-method__choice label:first-of-type {
+  margin-right: 5vw;
+}
+
+.menu .orders h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.menu .orders .order {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 2vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.menu .orders .order .cross {
+  cursor: pointer;
+  background-color: lightgray;
+  border-radius: 20px;
+  height: 35px;
+  width: 35px;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+.menu .orders .order .cross i {
+  font-weight: 300;
+}
+
+.menu .orders .order .cross:hover {
+  background: #b1b0b0;
+}
+
+.menu .orders .order .order-item {
+  margin-right: auto;
+  margin-left: 2vw;
+}
+
+.menu .orders .order .order-item_price {
+  margin-left: auto;
+  justify-self: flex-end;
+}
+
+.menu .orders .bold {
+  font-weight: 600;
+}
+
+.menu .orders .sub-total {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .orders .sub-total .sub-total__price {
+  justify-self: flex-end;
+  margin-left: auto;
+}
+
+.menu .orders .service-charge {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .orders .service-charge .service-charge__price {
+  margin-left: auto;
+}
+
+.menu .orders .total {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .orders .total .total__price {
+  margin-left: auto;
+}
+
+.menu .orders .notes ::-webkit-input-placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.menu .orders .notes :-ms-input-placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.menu .orders .notes ::-ms-input-placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.menu .orders .notes ::placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.menu .orders .notes textarea {
+  resize: none;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.menu .orders .button-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.menu .orders h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+
+.menu .orders::-webkit-scrollbar {
+  width: 0.6vw;
+  z-index: 1;
+}
+
+.menu .orders::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.menu .orders::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+@media (max-width: 400px) {
+  .tab h3 {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .menu .menu-items {
+    width: 100%;
+  }
+  .menu .orders {
+    width: 100%;
+  }
+  .menu .order-preview .order {
+    width: 95%;
+  }
+  .menu .item {
+    width: 40vw !important;
+  }
+  .menu .total {
+    width: 95%;
+  }
+  .menu .sub-total {
+    width: 95%;
+  }
+  .menu .service-charge {
+    width: 95%;
+  }
+  .notes {
+    width: 95%;
+  }
+  .notes textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tab-content {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: column !important;
+            flex-flow: column !important;
+    width: 100%;
+  }
+  .tab-content .right-side {
+    margin-right: 52px;
+  }
+  .tab-content .item {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=Menu.css.map */

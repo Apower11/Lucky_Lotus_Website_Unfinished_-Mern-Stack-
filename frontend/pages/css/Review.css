@@ -1,0 +1,79 @@
+.review:first-of-type {
+  border-top: 2px solid #cccaca;
+}
+
+.review {
+  height: auto;
+  border-bottom: 2px solid #cccaca;
+  padding-left: 3vw;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
+}
+
+.review button {
+  width: 140px;
+  height: 45px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.review button:first-of-type {
+  margin-right: 10px;
+}
+
+.review .rating .fa-star {
+  font-size: 20px;
+}
+
+.review .rating .rating-text {
+  margin-left: 2vw;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+}
+
+.review .user {
+  margin-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review .user .profilePic {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  background-size: cover;
+}
+
+.review .user .user-name {
+  margin-left: 0;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.review .user .user-posted__at {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  color: #bcbcbc;
+}
+
+.review .review-description {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 3vh;
+  margin-right: 3vw;
+}
+
+.review .review-description p {
+  word-break: break-all;
+}
+/*# sourceMappingURL=Review.css.map */

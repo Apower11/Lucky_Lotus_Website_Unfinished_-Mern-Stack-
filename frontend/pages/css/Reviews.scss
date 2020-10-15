@@ -1,0 +1,388 @@
+.reviews-container {
+  display: flex;
+  .average-rating__container {
+    margin-top: 3vh;
+    border: 2px solid #cccaca;
+    width: 60vw;
+    border-radius: 10px;
+    margin-left: 5vw;
+    h1 {
+      text-align: center;
+      border-bottom: 2px solid #cccaca;
+      margin: 0;
+      height: 13vh;
+      font-family: "Oswald", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h1:first-of-type {
+      font-size: 42px;
+    }
+    .average-rating {
+      border-bottom: 2px solid #cccaca;
+      background-color: #e9e9e9;
+      height: 23vh;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      .headings {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        h1 {
+          border: none;
+          font-size: 2.4rem;
+        }
+        h3 {
+          text-align: center;
+          width: 50%;
+          font-size: 1.2rem;
+          font-family: "Oswald", sans-serif;
+          font-weight: lighter;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .stars {
+        display: block;
+        font-size: 2rem;
+      }
+    }
+  }
+  .average-rating__button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 2vh 0;
+    button {
+      width: auto;
+      padding: 0 20px;
+    }
+  }
+  .reviews {
+    .load-button__container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      border: none;
+    }
+  }
+  .reviews-sidebar {
+    margin-left: 5vw;
+    border: 2px solid #cccaca;
+    width: 26vw;
+    border-radius: 20px;
+    margin-top: 3vh;
+    border-top: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: sticky;
+    top: 15%;
+    height: 100%;
+    .reviews-sidebar__header {
+      background-color: #e9e9e9;
+      border-radius: 20px;
+      border: 2px solid #cccaca;
+      width: 101%;
+      height: 13vh;
+      display: flex;
+      align-items: center;
+      h3 {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        height: 8vh;
+        margin-left: 2vw;
+        font-family: "Oswald", sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+    .search-container {
+      margin-top: 2vh;
+      height: 10vh;
+      width: 90%;
+      border-radius: 80px;
+      display: flex;
+      .cross {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 10%;
+        height: 100% !important;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 20px;
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #ccc;
+        border: 0;
+        i {
+          font-weight: 300;
+          color: #ccc;
+        }
+        i:hover {
+          color: darkgray;
+        }
+      }
+      form {
+        width: 110%;
+        height: inherit;
+        display: flex;
+        border-radius: 80px;
+        padding-left: 1vw;
+        border: 2px solid #cccaca;
+        .search-bar {
+          width: 100%;
+          height: 98%;
+          border-radius: 80px;
+          border: 0;
+          color: black;
+          font-size: 18px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          outline: none;
+        }
+      }
+    }
+    .sort-by {
+      border: 2px solid black;
+      margin-top: 6vh;
+      height: 10vh;
+      width: 90%;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      padding-left: 1vw;
+      option {
+        font-weight: bold;
+        color: black;
+      }
+    }
+    select:invalid {
+      color: #9d9999;
+      border: 2px solid #cccaca;
+    }
+    ::placeholder {
+      color: #9d9999;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+    }
+    .filter-by__rating {
+      width: 90%;
+      margin-top: 8vh;
+      display: flex;
+      flex-flow: column;
+      h1 {
+        margin: 0;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+      }
+      .filter-by__rating-rating {
+        display: flex;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        margin-top: 2vh;
+        .stars {
+          cursor: pointer;
+        }
+        .cross {
+          position: relative;
+          left: 0;
+          top: 0;
+          width: 10%;
+          height: 100% !important;
+          cursor: pointer;
+          background-color: transparent;
+          border-radius: 20px;
+          width: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+          color: #ccc;
+          border: 0;
+          i {
+            font-weight: 300;
+            color: #ccc;
+          }
+          i:hover {
+            color: darkgray;
+          }
+        }
+      }
+    }
+  }
+}
+
+.checked {
+  color: orange;
+}
+
+@media (max-width: 900px) {
+  .reviews-container {
+    flex-flow: column-reverse;
+    .reviews-sidebar {
+      position: relative;
+      width: 90vw;
+      height: auto;
+      .reviews-sidebar__header {
+        h3 {
+          width: 100% !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .filter-by__rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4vh;
+      }
+    }
+    .average-rating__container {
+      width: 90vw;
+      margin-bottom: 4vh;
+    }
+  }
+  .filter-by__rating-rating {
+    .cross {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .average-rating__container {
+    .headings {
+      h3 {
+        width: 13vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  body .average-rating__container {
+    height: auto;
+    .average-rating__container-header {
+      font-size: 8vw !important;
+      padding: 2vh 0;
+      height: auto;
+    }
+    #average-rating {
+      height: inherit;
+      padding: 2vh 0;
+      .headings {
+        height: inherit;
+        h1 {
+          font-size: 8vw;
+          height: auto;
+        }
+        h3 {
+          font-size: 4vw;
+          height: inherit;
+        }
+      }
+      .stars {
+        font-size: 8vw;
+      }
+    }
+    .average-rating__button-container {
+      height: auto;
+      button {
+        height: inherit;
+        padding: 1vh 0;
+        margin: 2vh 0;
+        width: 70%;
+        font-size: 7vw;
+      }
+    }
+    .reviews {
+      .rating {
+        text-align: center;
+      }
+      .user {
+        display: flex;
+        flex-flow: column;
+      }
+      .review-description {
+        text-align: center;
+      }
+    }
+  }
+  body .reviews-sidebar {
+    height: auto;
+    .reviews-sidebar__header {
+      height: inherit;
+      h3 {
+        font-size: 8vw;
+      }
+    }
+    .search-container {
+      height: 7vh;
+    }
+    .sort-by {
+      height: 7vh;
+      margin-top: 2vh;
+    }
+  }
+}
+
+@media (max-height: 500px) {
+  body #average-rating {
+    height: 35vh;
+  }
+  .average-rating__container-header {
+    padding: 3vh 0;
+  }
+  body .reviews-sidebar {
+    height: 20vh;
+  }
+  .reviews-container {
+    flex-flow: column-reverse;
+    .reviews-sidebar {
+      position: relative;
+      width: 90vw;
+      height: auto;
+      .search-container {
+        height: 15vh;
+      }
+      .sort-by {
+        height: 15vh;
+      }
+      .reviews-sidebar__header {
+        h3 {
+          width: 100% !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .filter-by__rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4vh;
+      }
+    }
+    .average-rating__container {
+      width: 90vw;
+      margin-bottom: 4vh;
+    }
+  }
+}
