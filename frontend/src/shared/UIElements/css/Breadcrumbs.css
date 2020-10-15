@@ -1,0 +1,39 @@
+.breadcrumbs {
+  background-color: #e5e5e5;
+  font-family: "Oswald", sans-serif;
+  height: 15vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.breadcrumbs h1 {
+  color: black;
+  font-size: 55px;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  height: 100%;
+}
+
+@media (max-height: 500px) {
+  body .breadcrumbs {
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=Breadcrumbs.css.map */

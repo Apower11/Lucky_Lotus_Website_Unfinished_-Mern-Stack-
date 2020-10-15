@@ -1,0 +1,12 @@
+.error-modal {
+  top: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.error-modal p {
+  text-align: center;
+}
+/*# sourceMappingURL=ErrorModal.css.map */

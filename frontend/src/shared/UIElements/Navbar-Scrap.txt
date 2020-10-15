@@ -1,0 +1,7 @@
+{!loginMode && (
+          <input
+            className="authentication-input"
+            type="number"
+            placeholder="Mobile Number"
+          />
+        )}

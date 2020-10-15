@@ -1,0 +1,70 @@
+.login-modal {
+  top: 2vh;
+  transition: display 2s;
+  transition-timing-function: linear;
+}
+.login-modal__content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  input {
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    height: 50px;
+    width: 70%;
+    margin-right: 0;
+    margin-top: 3vh;
+    padding: 0 8px;
+  }
+  input:focus {
+    box-shadow: 2px 2px 20px black;
+  }
+  ::placeholder {
+    color: #9d9999;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-left: 4px;
+  }
+  button {
+    margin-top: 3vh;
+  }
+  h4 {
+    cursor: pointer;
+    color: royalblue;
+  }
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+@media (max-width: 600px) {
+  .login-modal__content {
+    input {
+      font-size: 14px;
+    }
+    ::placeholder {
+      font-size: 14px;
+    }
+  }
+}

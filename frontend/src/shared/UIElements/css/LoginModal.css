@@ -1,0 +1,130 @@
+.login-modal {
+  top: 2vh;
+  -webkit-transition: display 2s;
+  transition: display 2s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.login-modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-modal__content input {
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  height: 50px;
+  width: 70%;
+  margin-right: 0;
+  margin-top: 3vh;
+  padding: 0 8px;
+}
+
+.login-modal__content input:focus {
+  -webkit-box-shadow: 2px 2px 20px black;
+          box-shadow: 2px 2px 20px black;
+}
+
+.login-modal__content ::-webkit-input-placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.login-modal__content :-ms-input-placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.login-modal__content ::-ms-input-placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.login-modal__content ::placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.login-modal__content button {
+  margin-top: 3vh;
+}
+
+.login-modal__content h4 {
+  cursor: pointer;
+  color: royalblue;
+}
+
+.alert-enter {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.alert-enter-active {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.alert-exit {
+  opacity: 1;
+}
+
+.alert-exit-active {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+@media (max-width: 600px) {
+  .login-modal__content input {
+    font-size: 14px;
+  }
+  .login-modal__content ::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .login-modal__content :-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .login-modal__content ::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .login-modal__content ::placeholder {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=LoginModal.css.map */

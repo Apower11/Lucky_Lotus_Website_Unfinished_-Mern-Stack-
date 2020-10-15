@@ -1,0 +1,25 @@
+.breadcrumbs {
+  background-color: #e5e5e5;
+  font-family: "Oswald", sans-serif;
+  height: 15vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: black;
+    font-size: 55px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+  }
+}
+
+@media (max-height: 500px) {
+  body .breadcrumbs {
+    height: 100px;
+  }
+}

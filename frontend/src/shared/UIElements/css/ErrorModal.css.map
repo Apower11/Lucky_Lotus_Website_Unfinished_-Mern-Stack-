@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,GAAG,EAAE,GAAG;EACR,SAAS,EAAE,MAAM;CAIlB;;AAND,AAGE,YAHU,CAGV,CAAC,CAAC;EACA,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "ErrorModal.scss"
+    ],
+    "names": [],
+    "file": "ErrorModal.css"
+}
