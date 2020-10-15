@@ -1,0 +1,181 @@
+.navbar-placeholder {
+  height: 15vh;
+}
+.our-team {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  h1 {
+    margin-top: 4.87062404870624vh;
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-size: 4rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 3vh;
+    margin-bottom: 0;
+  }
+  .team-members {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 14.916286149162861vh;
+    margin-bottom: 11.719939117199392vh;
+    .team-member {
+      margin-right: 9.150805270863836vw;
+      width: 25.915080527086385vw;
+      box-shadow: black 2px 2px 20px;
+      .team-member__image {
+        background-color: #ccc;
+        height: 40vh;
+      }
+      .team-member__info {
+        background-color: black;
+        color: white;
+        height: 19.7869101978691vh;
+        h3 {
+          margin: 0;
+          font-family: "Oswald", sans-serif;
+          font-size: 40px;
+          text-align: center;
+        }
+        h5 {
+          margin: 0;
+          text-align: center;
+          font-size: 21px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: normal;
+        }
+      }
+    }
+    .team-member:last-of-type {
+      margin-right: 0;
+    }
+    #team-member-one .team-member__image {
+      background-image: url("../images/chef-image-1.jpg");
+      background-size: cover;
+      background-position: center center;
+    }
+    #team-member-two .team-member__image {
+      background-image: url("../images/owner.jpg");
+      background-size: cover;
+      background-position: center center;
+    }
+    #team-member-three .team-member__image {
+      background-image: url("../images/manager.jpg");
+      background-size: cover;
+      background-position: center top;
+    }
+  }
+}
+
+.secret-recipes {
+  height: 110vh;
+  display: flex;
+  flex-flow: row;
+  .text-side {
+    width: 45%;
+    height: 110vh;
+    background-color: black;
+    color: white;
+    h1 {
+      font-family: "Dancing Script", cursive;
+      font-weight: 500;
+      font-size: 75px;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 84px;
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      line-height: 38px;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 80px;
+    }
+  }
+  .image-side {
+    width: 55%;
+    height: 110vh;
+    background-image: url("../images/restaurant-kitchen.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-height: 700px) {
+  div.secret-recipes {
+    flex-flow: column;
+    flex-direction: column-reverse;
+    height: auto;
+    div.image-side {
+      height: auto !important;
+      width: 100%;
+      padding: 5vh 0;
+    }
+    div.text-side {
+      width: 100%;
+      height: auto !important;
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .our-team {
+    height: auto;
+  }
+  .team-members {
+    flex-flow: column !important;
+    width: 100vw;
+    align-items: center;
+  }
+  .team-member {
+    width: 80vw !important;
+    margin-top: 8vh;
+    margin-right: 0 !important;
+  }
+  .team-member__image {
+    height: 60vh !important;
+  }
+
+  .secret-recipes {
+    flex-flow: column;
+    flex-direction: column-reverse;
+    height: auto;
+    .image-side {
+      height: auto !important;
+      width: 100%;
+      padding: 5vh 0;
+    }
+    .text-side {
+      width: 100%;
+      height: auto !important;
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-height: 500px) {
+  .team-member__info {
+    height: auto !important;
+  }
+}

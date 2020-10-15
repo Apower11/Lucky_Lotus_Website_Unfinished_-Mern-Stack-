@@ -1,0 +1,332 @@
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form .contact-form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  width: 100%;
+}
+
+.contact-form h1 {
+  margin-top: 4.87062404870624vh;
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.contact-form h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 3vh;
+  margin-bottom: 0;
+}
+
+.contact-form form {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 4.418740849194728vw;
+  margin-bottom: 10.95890410958904vh;
+  margin-top: 8.52359208523592vh;
+}
+
+.contact-form form input {
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  height: 66px;
+  width: 326px;
+  margin-right: 32px;
+  padding-left: 15px;
+}
+
+.contact-form form #name {
+  width: 48vw;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.contact-form form #email {
+  width: 48vw;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+  margin-top: 4.26179604261796vh;
+}
+
+.contact-form form #subject {
+  width: 48vw;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+  margin-top: 4.26179604261796vh;
+}
+
+.contact-form form #message {
+  width: 48vw !important;
+  height: 22.98325722983257vh !important;
+  padding-left: 15px;
+  margin-top: 4.26179604261796vh;
+  padding-top: 2vh;
+  color: black;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border: 2px solid #ccc;
+}
+
+.contact-form form input:focus {
+  -webkit-box-shadow: 2px 2px 20px black;
+          box-shadow: 2px 2px 20px black;
+}
+
+.contact-form form #message:focus {
+  -webkit-box-shadow: 2px 2px 20px black;
+          box-shadow: 2px 2px 20px black;
+}
+
+.contact-form form button {
+  width: 49.5vw;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+  margin-top: 5.6316590563165905vh;
+  height: 11.719939117199392vh;
+  border-radius: 0;
+}
+
+.contact-form form ::-webkit-input-placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.contact-form form :-ms-input-placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.contact-form form ::-ms-input-placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.contact-form form ::placeholder {
+  color: #9d9999;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.contact-form .contact-details {
+  width: 40%;
+  height: 75vh;
+  margin-left: 3vw;
+  margin-top: 8.5vh;
+  background-color: black;
+  color: white;
+}
+
+.contact-form .contact-details h1 {
+  text-align: center;
+}
+
+.contact-form .contact-details i {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-form .contact-details div:first-of-type {
+  margin-top: 1vh;
+}
+
+.contact-form .contact-details div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-top: 3vh;
+}
+
+.contact-form .contact-details div i {
+  margin-left: 36px;
+  margin-top: 2vh;
+  width: 30px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.contact-form .contact-details div p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+
+.contact-form .contact-details div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.contact-form .contact-details div div p {
+  margin: 0;
+  margin-top: 1vh;
+  margin-left: 13px;
+}
+
+.display-none {
+  display: none;
+}
+
+.restaurant-map h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .contact-form .contact-form-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-form .contact-form-content .contact-details {
+    margin: 0;
+  }
+  .contact-form form {
+    width: auto !important;
+  }
+  .contact-form form input {
+    width: 80vw !important;
+  }
+  .contact-form form #message {
+    width: 80vw !important;
+  }
+  .contact-form form button {
+    height: auto !important;
+    width: 80vw;
+  }
+  .contact-details {
+    margin-bottom: 4vh !important;
+    width: 80vw !important;
+    height: auto !important;
+    padding-bottom: 6vh;
+  }
+  .contact-details div {
+    width: 80vw !important;
+    margin-right: 0 !important;
+  }
+  .contact-details div div {
+    width: 80vw !important;
+  }
+  .contact-details div div p {
+    width: 80vw !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-details {
+    width: 95vw !important;
+  }
+  .contact-details div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testimonial h3 {
+    text-align: center;
+  }
+  .testimonials h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-height: 500px) {
+  #message {
+    height: auto !important;
+  }
+  .restaurant-map h1 {
+    padding: 3vh 0;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */
