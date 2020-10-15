@@ -1,0 +1,9 @@
+Problem: Routes wouldn't work because 2 routes were the same bar a variable
+at the end. Example:
+// Get review by rating
+router.get('/reviews/:rating', reviewController.getFilteredReviews);
+
+// Get review by search term
+router.get('/reviews/:searchTerm', reviewController.searchReviews);
+
+Solution: Make sure routes before :variable are different.

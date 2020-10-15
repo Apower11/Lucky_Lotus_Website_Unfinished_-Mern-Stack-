@@ -1,0 +1,27 @@
+.not().isEmpty() - Must not be empty.
+
+.withMessage() - Error message if invalid input is passed input
+
+.isEmail() - Checks if input is an email.
+
+.isNumeric() - If is number.
+
+.isAlphanumeric() - If contains only numbers and letters.
+
+.isLength({min: 6} or {max: 6}) - Sets min or max length of input.
+
+.normalizeEmail() - Sanitizes email
+
+.bail() - Stops running if any previous validators have failed.
+
+.isString() - If is string.
+
+.not() - Negates result of next validator.
+
+.trim() - Gets rid of any whitespace.
+
+!! Converters !!
+.toDate() - Only works if input is date
+.toFloat() - Input must be float.
+.toInt() - Only works if input is an integer.
+.toBoolean()

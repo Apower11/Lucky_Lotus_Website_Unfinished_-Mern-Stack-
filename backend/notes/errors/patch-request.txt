@@ -1,0 +1,5 @@
+Problem: Patch request wasn't working.
+
+Reason: Wrong route being requested. Both mispelled and directed to add route instead of Patch.
+
+Solution: Be careful with routes, and ensure user is directed to right one.

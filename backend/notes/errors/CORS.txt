@@ -1,0 +1,20 @@
+Problem: Cors Policy blocked request.
+
+Solution: Insert this code into app.js:
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+  );
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
+
+  next();
+});
+
+Better solution: Sometimes it still won't let PATCH requests work. Use this cors middleware for better results.
+Insert this code into the app.js file:
+
+let cors = require("cors");
+// Set Headers
+app.use(cors());
